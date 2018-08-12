@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.production.hitesh.foobar.search_friend">
+    <RelativeLayout
+        android:padding="5dp"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="?attr/actionBarSize">
+    <ImageButton
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/back"
+        android:layout_marginLeft="5dp"
+
+        android:src="@drawable/ic_arrow_back_white_24dp"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/searchEditText"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+android:singleLine="true"
+           android:layout_marginLeft="32dp"
+            android:background="@android:color/transparent"
+            android:hint="Username"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Search"
+       android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:dividerHeight="0.3dp"
+        android:divider="@drawable/list_divider"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_height="fill_parent"
+        android:id="@+id/friend_search"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.production.hitesh.foobar.Requests">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Pending Requests"/>
+    <ListView
+        android:layout_marginTop="10dp"
+        android:drawSelectorOnTop="false"
+        android:layout_width="match_parent"
+        android:id="@+id/request_list"
+        android:divider="@drawable/list_divider"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:dividerHeight="0.3dp"
+        android:layout_height="fill_parent"></ListView>
+
+</LinearLayout>

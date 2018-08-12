@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:id="@+id/friend_refesh"
+            android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/friend_list"
+        android:divider="@drawable/list_divider"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:dividerHeight="0.3dp"
+        android:layout_height="fill_parent"></ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="6dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_chat_add"
+        app:fab_colorNormal="#0D47A1"
+        android:layout_marginBottom="60dp"
+        app:fab_colorPressed="#0D47A1"
+        app:fab_colorRipple="#99FFFFFF"
+        fab:fab_size="normal" />
+
+
+</RelativeLayout>

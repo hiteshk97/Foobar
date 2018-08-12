@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#2196F3"
+    android:backgroundTint="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context="com.production.hitesh.foobar.Register">
+
+
+    <RelativeLayout android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:id="@+id/symbol"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="100dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/profile"
+            app:civ_border_width="3dp"
+            android:clickable="true"
+            app:civ_border_color="#FFF"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:backgroundTint="#fff"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:textColorHint="#fff"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_width="0dp"
+            android:id="@+id/name"
+            android:layout_height="wrap_content"
+            android:hint="Name"/>
+            <EditText
+                android:backgroundTint="#fff"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+
+                android:layout_width="0dp"
+                android:id="@+id/Edit_username_reg"
+                android:hint="Username"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:backgroundTint="#fff"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_width="fill_parent"
+            android:id="@+id/Edit_email_reg"
+            android:layout_height="wrap_content"
+            android:hint="Email"/>
+
+
+
+            <EditText
+            android:backgroundTint="#fff"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+
+            android:id="@+id/Edit_pass_reg"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+
+            android:hint="Password" />
+
+
+        <Button
+            android:clickable="true"
+            android:background="@drawable/button_bg"
+            android:layout_width="fill_parent"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/register"
+
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+           android:layout_margin="20dp"
+            android:text="Sign up"/>
+
+
+</LinearLayout>
+
+
+</LinearLayout>
