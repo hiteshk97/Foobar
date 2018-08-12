@@ -82,7 +82,6 @@ SharedPreferences.Editor editor;
             @Override
             public void run() {
                 try{
-                    //Bhan ka loda
 
                     msg_get();
 
