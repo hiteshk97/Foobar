@@ -82,7 +82,6 @@ SharedPreferences.Editor editor;
             @Override
             public void run() {
                 try{
-
                     msg_get();
 
                 }catch (Exception e){
